@@ -65,11 +65,11 @@ def display_credentials():
 
 
 def mitch():
-  print("WELCOME TO PASSWORD-LOCKER.")
+  print("Hey welcome to password locker")
 
 
 def mitch1():
-  print("Would you like to continue? (yes/no)")
+  print("Would you like to continue? (y/n)")
   answer = input()
   if answer == "yes":
     print("Okay.Press 1 to continue.")
