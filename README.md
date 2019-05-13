@@ -21,7 +21,7 @@ The application allows the user to create an account and save his/her credential
 | Exit app                         | Select exit choice             | App closes                             |
 
 # Using the app
-1. Clone the repository using ``.
+1. Clone the repository using `https://github.com/jamesgathuru001/password-locker.git`.
 2. Open the directory of the application using your terminal
 3. Run 'python3.6 start.py'
 
