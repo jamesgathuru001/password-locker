@@ -25,6 +25,9 @@ The application allows the user to create an account and save his/her credential
 2. Open the directory of the application using your terminal
 3. Run 'python3.6 start.py'
 
+## Contacts
+For any mishap or question you can contact me on (jamesgathuru001@gmail.com)
+
 ## License
 MIT License
 
