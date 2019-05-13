@@ -65,25 +65,25 @@ def display_credentials():
 
 
 def james():
-  print("Hey welcome to password locker")
+  print("Welcome to password locker")
 
 
 def james1():
   print("Would you like to continue? (y/n)")
   answer = input()
   if answer == "yes":
-    print("Okay.Press 1 to continue.")
+    print("To continue press 1")
     one = input()
     if one == "1":
-      print("Would you like to sign up/log in")
-      print("Press 1 = sign up / Press 2 = log in / Press 3 = exit")
+      print("Choose which you like to sign up/log in")
+      print("Press x = sign up / Press y = log in / Press 1 = exit")
       logorsign = input()
-      if logorsign == "1":
-        print("Please enter your preffered username.")
+      if logorsign == "x":
+        print("Enter username.")
         username = input()
-        print("Enter a preffered password.")
+        print("Enter password.")
         password1 = getpass.getpass("password:")
-        print("Confirm your password please.")
+        print("Confirm password")
         password2 = getpass.getpass("password:")
         if password1 == password2:
           print("New user: " + username + " created.")
@@ -93,22 +93,22 @@ def james1():
         else:
           print("Sorry passwords don't match.")
           james1()
-      elif logorsign == "2":
-        print("Enter your username.")
+      elif logorsign == "y":
+        print("Enter Username.")
         username = input()
-        print("Enter your password.")
+        print("Enter Password.")
         password3 = getpass.getpass("password:")
         if check_existing_user(password3):
           search_account = find_account(password3)
           if True:
             print(f"welcome  {search_account.username}")
-            print("Press 1 = New credential. / Press 2 = View existing credentials / Press 3 = Delete credentials.")
+            print("Press x = New credential. / Press y = View existing credentials / Press z = Delete credentials.")
             legacy = input()
-            if legacy == "1":
+            if legacy == "x":
               print("Enter account name.")
               account_name = input()
               print(
-                  "Press 1 = Generate a password / Press 2 = To make your own password.")
+                  "Press 1 = New password / Press 2 = Make password.")
               passwrd = input()
               if passwrd == "1":
                 letters = string.ascii_letters + string.digits
@@ -117,8 +117,8 @@ def james1():
                 password = genpassword
                 print(f"{account_name} has been successfully saved")
                 james1()
-              elif passwrd == "2":
-                print("Enter account password.")
+              elif passwrd == "1":
+                print("Enter Password.")
                 password = getpass.getpass("password:")
                 print(f"{account_name} +  has been successfully saved")
                 james1()
@@ -137,20 +137,20 @@ def james1():
                   print("Credential deleted")
                   james1()
                 else:
-                  print("No match of such a credential")
+                  print("No match")
                   james1()
         else:
-          print("Incorrect username or password.Try again.")
+          print("Incorrect username or password.Try again!")
           james1()
       elif logorsign == "3":
         exit()
     else:
-      print("Are you that stupid.Please press 1")
+      print("Press 1")
       james1()
   elif answer == "no":
-    print("Thanks for using our application.we hope to see you again.")
+    print("Thanks for using this application")
   else:
-    print("Invalid choice.Try again.")
+    print("Wrong choice.Try again!")
     james1()
 
 
