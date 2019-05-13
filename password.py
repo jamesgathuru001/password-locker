@@ -1,9 +1,3 @@
-
-#!/usr/bin/python
-# Programmed by P.B.Surya.Subhash
-#Random program to test my skills ! :D
-#This will generate Random strong passwords for you ! :)
-
 import random
 import pyperclip
 
@@ -50,9 +44,6 @@ while count < length:
 
 #convert ascii code to characters
 word = "".join([chr(c) for c in password])
-
-#copy pass to clipboard
-pyperclip.copy(word)
 
 #print the result
 print("Random password of length %s is: \n" % length)
