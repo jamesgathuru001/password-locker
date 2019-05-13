@@ -64,11 +64,11 @@ def display_credentials():
     return User.display_users()
 
 
-def mitch():
+def james():
   print("Hey welcome to password locker")
 
 
-def mitch1():
+def james1():
   print("Would you like to continue? (y/n)")
   answer = input()
   if answer == "yes":
@@ -121,7 +121,7 @@ def mitch1():
                 print("Enter account password.")
                 password = getpass.getpass("password:")
                 print(f"{account_name} +  has been successfully saved")
-                mitch1()
+                james1()
                 save_credentials(create_credentials(account_name, password))
             elif legacy == "2":
               if display_credentials:
@@ -135,25 +135,25 @@ def mitch1():
                 if delaccount == account_name:
                   Credentials.credentials_list.remove(Credentials)
                   print("Credential deleted")
-                  mitch1()
+                  james1()
                 else:
                   print("No match of such a credential")
-                  mitch1()
+                  james1()
         else:
           print("Incorrect username or password.Try again.")
-          mitch1()
+          james1()
       elif logorsign == "3":
         exit()
     else:
       print("Are you that stupid.Please press 1")
-      mitch1()
+      james1()
   elif answer == "no":
     print("Thanks for using our application.we hope to see you again.")
   else:
     print("Invalid choice.Try again.")
-    mitch1()
+    james1()
 
 
 if __name__ == '__main__':
-  mitch()
-  mitch1()
+  james()
+  james1()
