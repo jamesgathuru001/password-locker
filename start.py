@@ -75,11 +75,11 @@ def mitch1():
     print("Okay.Press 1 to continue.")
     one = input()
     if one == "1":
-      print("Welcome to password-locker.Would you like to sign up/log in")
+      print("Would you like to sign up/log in")
       print("Press 1 = sign up / Press 2 = log in / Press 3 = exit")
       logorsign = input()
       if logorsign == "1":
-        print("Awesome!Please enter your preffered username.")
+        print("Please enter your preffered username.")
         username = input()
         print("Enter a preffered password.")
         password1 = getpass.getpass("password:")
@@ -89,10 +89,10 @@ def mitch1():
           print("New user: " + username + " created.")
           print("*****Choose log in this time.*****")
           save_user(create_user(username, password1))
-          mitch1()
+          james1()
         else:
           print("Sorry passwords don't match.")
-          mitch1()
+          james1()
       elif logorsign == "2":
         print("Enter your username.")
         username = input()
@@ -116,7 +116,7 @@ def mitch1():
                 print(f"Your new generated password is: {genpassword}")
                 password = genpassword
                 print(f"{account_name} has been successfully saved")
-                mitch1()
+                james1()
               elif passwrd == "2":
                 print("Enter account password.")
                 password = getpass.getpass("password:")
